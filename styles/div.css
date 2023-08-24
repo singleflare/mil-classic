@@ -1,0 +1,35 @@
+.questionPanel{
+	width:1920px;
+	height:192px;
+	left:0px;
+	right:0px;
+	opacity:0.5;
+}
+.ansPanel{
+  width:1920px;
+	height:96px;
+	left:0px;
+	right:0px;
+	opacity:0.5;
+}
+.leftAnsPanel{
+	width: 857px;
+	height: 96px;
+	left: 227px;
+}
+.rightAnsPanel{
+	width: 857px;
+	height: 96px;
+	right: 227px;
+}
+.ansText .ansLetter {
+	font-size: 43pt;
+	font-family:'Times New Roman';
+	color:#ffffff;
+	left:188px;
+	top:19px;
+	opacity:0.5;
+}
+.finalImg .correctImg{
+	opacity:0.5;
+}
