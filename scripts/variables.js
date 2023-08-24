@@ -1,14 +1,21 @@
 (function(gameVars){
-  gameVars.5050Used=false
-  gameVars.x2Used=false
-  gameVars.jumpUsed=false
+
+  gameVars.contestantName="Contestant name"
+  gameVars.contestantLocation="Contestant location"
+
+  gameVars.qinProgress=false
+  gameVars.currentFinal=""
+  gameVars.currentCorrect=""
 
   gameVars.AnsADeleted=false
   gameVars.AnsBDeleted=false
   gameVars.AnsCDeleted=false
   gameVars.AnsDDeleted=false
 
-  gameVars.qna=[]
+  gameVars.questionNumber=null
+  gameVars.revealQnaKeyboardSequence=0
+
+  gameVars.qnas=[]
   gameVars.moneys=[]
   gameVars.letsplaySounds=[]
   gameVars.bedSounds=[]
@@ -16,3 +23,4 @@
   gameVars.correctSounds=[]
   gameVars.loseSounds=[]
 })
+(window.gameVars=window.gameVars||{});

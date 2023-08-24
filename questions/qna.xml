@@ -1,9 +1,9 @@
 <questions>
   <q>
     <text>Q</text>
-    <a correct="">A</a>
-    <b correct="">B</b>
-    <c correct="">C</c>
-    <d correct="">D</d>
+    <a correct="yes">A</a>
+    <b correct="no">B</b>
+    <c correct="no">C</c>
+    <d correct="no">D</d>
   </q>
 </questions>

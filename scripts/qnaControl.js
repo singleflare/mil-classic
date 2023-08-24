@@ -1,6 +1,6 @@
 function setQ(){
   var targetQ=null
-  targetQ=window.GameVariables.QuestionsAndAnswers[window.GameVariables.QuestionLevel - 1]
+  targetQ=window.gameVars.qnas[window.GameVars.QuestionLevel - 1]
   $('.qTd').html(targetQ.Question)
   $('#ansA .ansText').html(targetQ.AnsA)
   $('#ansB .ansText').html(targetQ.AnsB)
