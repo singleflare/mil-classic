@@ -12,3 +12,7 @@ function revealQnApanel(){
   $('.ansPanel').css('opacity',1)
   $('.questionPanel').css('opacity',1)
 }
+
+function lockin(ans){
+  $('#ans'+ans+'.finalImg')
+}

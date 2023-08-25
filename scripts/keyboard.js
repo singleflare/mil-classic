@@ -11,7 +11,11 @@ $(document).ready(function(){
       }
     }
     else if(e.keyCode==50){//2: lock in B
-      
+      if(window.gameVars.qinProgress==true&&window.gameVars.currentFinal==""){
+        lockin('B')
+        window.gameVars.currentFinal='A'
+        playFinalSound()
+      }
     }
     else if(e.keyCode==51){//3: lock in C
       

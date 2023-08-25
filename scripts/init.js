@@ -19,19 +19,19 @@ function getQnaForGame(){
     async:false,
     success:function(xml){
       $(xml).find('question').each(function(){
-        var qanda=new qna()
-        qanda.Question=$(this).find('q')[0].textContent
-        qanda.AnsA=$(this).find('a')[0].textContent
-        qanda.AnsB=$(this).find('b')[0].textContent
-        qanda.AnsC=$(this).find('c')[0].textContent
-        qanda.AnsD=$(this).find('d')[0].textContent
+        var qna=new qna()
+        qna.Question=$(this).find('q')[0].textContent
+        qna.AnsA=$(this).find('a')[0].textContent
+        qna.AnsB=$(this).find('b')[0].textContent
+        qna.AnsC=$(this).find('c')[0].textContent
+        qna.AnsD=$(this).find('d')[0].textContent
 
-        if($(this).find('a')[0].attributes[0].value=="yes"){qanda.CorrectAns="a"}
-        else if($(this).find('b')[0].attributes[0].value=="yes"){qanda.CorrectAns="b"}
-        else if($(this).find('c')[0].attributes[0].value=="yes"){qanda.CorrectAns="c"}
-        else if($(this).find('d')[0].attributes[0].value=="yes"){qanda.CorrectAns="d"}
+        if($(this).find('a')[0].attributes[0].value=="y"){qna.CorrectAns="a"}
+        else if($(this).find('b')[0].attributes[0].value=="y"){qna.CorrectAns="b"}
+        else if($(this).find('c')[0].attributes[0].value=="y"){qna.CorrectAns="c"}
+        else if($(this).find('d')[0].attributes[0].value=="y"){qna.CorrectAns="d"}
 
-        window.GameVariables.QuestionsAndAnswers.push(qanda)
+        window.GameVariables.QuestionsAndAnswers.push(qna)
       })
     }
   })
