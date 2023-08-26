@@ -1,9 +1,7 @@
 (function(gameVars){
-
   gameVars.contestantName="Contestant name"
   gameVars.contestantLocation="Contestant location"
 
-  gameVars.qinProgress=false
   gameVars.currentFinal=""
   gameVars.currentCorrect=""
 
