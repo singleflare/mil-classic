@@ -13,14 +13,35 @@ function revealQnAGraphics(){
   $('.ansPanel').css('opacity',1)
   $('.questionPanel').css('opacity',1)
   //Question text
+  $('.qText').css('opacity',1)
   //Answer A
+  $('.ansLetter .ansText').css('opacity',1)
   //Answer B
+  $('.ansLetter .ansText').css('opacity',1)
   //Answer C
+  $('.ansLetter .ansText').css('opacity',1)
   //Answer D
+  $('.ansLetter .ansText').css('opacity',1)
 }
 
 function lockin(ans){
-  $('#ans'+ans+'.finalImg')
+  if(ans='A'){
+    window.gameVars.currentFinal='A'
+    playFinalSound()
+    $('.finalImg')
+  }
+  else if(ans='B'){
+    window.gameVars.currentFinal='B'
+    playFinalSound()
+  }
+  else if(ans='C'){
+    window.gameVars.currentFinal='C'
+    playFinalSound()
+  }
+  else if(ans='D'){
+    window.gameVars.currentFinal='D'
+    playFinalSound()
+  }
 }
 
 function revealCorrect(){
@@ -28,6 +49,24 @@ function revealCorrect(){
     if(window.gameVars.currentFinal='A'){
       playCorrectSound()
     }
-    else{playWrongSound()}
+    else playWrongSound()
+  }
+  else if(window.gameVars.currentCorrect='B'){
+    if(window.gameVars.currentFinal='B'){
+      playCorrectSound()
+    }
+    else playWrongSound()
+  }
+  else if(window.gameVars.currentCorrect='C'){
+    if(window.gameVars.currentFinal='C'){
+      playCorrectSound()
+    }
+    else playWrongSound()
+  }
+  else if(window.gameVars.currentCorrect='D'){
+    if(window.gameVars.currentFinal='D'){
+      playCorrectSound()
+    }
+    else playWrongSound()
   }
 }
