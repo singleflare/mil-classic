@@ -1,6 +1,10 @@
 $(document).ready(function(){
   $(document).on('keydown',function(e){
-    if(e.keyCode==39){//right arrow: reveal questions and answers
+    if(e.keyCode==37){//left arrow: money tree
+      moneyTreeSlideIn()
+
+    }
+    else if(e.keyCode==39){//right arrow: reveal questions and answers
       revealQnAGraphics()
     }
     else if(e.keyCode==49){//1: lock in A
