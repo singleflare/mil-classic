@@ -39,7 +39,7 @@ function lockin(ans){
 
 function revealCorrect(){
   if(window.gameVars.currentFinal==window.gameVars.currentCorrect){
-    playCorrectSound()
+    playCorrectSound() 
   }
   else playWrongSound()
   $('.correctImg').css('opacity',1)

@@ -3,17 +3,17 @@ function playSound(file){
   window.gameVars.sound.play()
 }
 function playLetsPlay(){
-  playSound()
+  playSound(gameVars.letsplaySounds[0])
 }
 function playBed(){
-  
+  playSound(gameVars.bedSounds[0])
 }
 function playFinalSound(){
-
+  playSound(gameVars.finalSounds[0])
 }
 function playCorrectSound(){
-
+  playSound(gameVars.correctSounds[0])
 }
 function playWrongSound(){
-
+  playSound(gameVars.wrongSounds[0])
 }

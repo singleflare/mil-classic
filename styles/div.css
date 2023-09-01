@@ -3,14 +3,14 @@
 	height:192px;
 	left:0px;
 	right:0px;
-	opacity:1;
+	opacity:0;
 }
 .ansPanel{
   width:1920px;
 	height:96px;
 	left:0px;
 	right:0px;
-	opacity:0.5;
+	opacity:0;
 }
 .leftAnsPanel{
 	width: 857px;
@@ -31,8 +31,8 @@
 	opacity:1;
 }
 .finalImg .correctImg{
-	opacity:1;
+	opacity:0;
 }
 .moneyTree{
-	opacity:1;
+	opacity:0;
 }

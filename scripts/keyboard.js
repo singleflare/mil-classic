@@ -5,7 +5,18 @@ $(document).ready(function(){
 
     }
     else if(e.keyCode==39){//right arrow: reveal questions and answers
-      revealQnAGraphics1by1()
+      var qnaSequence=0
+      if(qnaSequence==0){
+        playLetsPlay()
+      }
+      else if(qnaSequence==1){
+        playBed()
+      }
+      else if(qnaSequence<=7){
+        revealQnAGraphics1by1()
+      }
+      
+      qnaSequence++
     }
     else if(e.keyCode==49){//1: lock in A
       lockin('A')
