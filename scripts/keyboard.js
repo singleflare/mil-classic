@@ -5,7 +5,7 @@ $(document).ready(function(){
 
     }
     else if(e.keyCode==39){//right arrow: reveal questions and answers
-      revealQnAGraphics()
+      revealQnAGraphics1by1()
     }
     else if(e.keyCode==49){//1: lock in A
       lockin('A')

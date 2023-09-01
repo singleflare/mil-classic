@@ -20,5 +20,4 @@
   gameVars.finalSounds=[]
   gameVars.correctSounds=[]
   gameVars.loseSounds=[]
-})
-(window.gameVars=window.gameVars||{});
+})(window.gameVars=window.gameVars||{});

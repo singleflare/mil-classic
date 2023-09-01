@@ -14,7 +14,7 @@ function revealQnAGraphics1by1(){
     $('.ansPanel').css('opacity',1)
     $('.questionPanel').css('opacity',1)
   }
-  else if(qnaRevealSequence==1) $('.qText').css('opacity',1)//Answer A
+  else if(qnaRevealSequence==1) $('.qText').css('opacity',1)//Question
   else if(qnaRevealSequence==2) $('#ansA .ansLetter .ansText').css('opacity',1)//Answer A
   else if(qnaRevealSequence==3) $('#ansB .ansLetter .ansText').css('opacity',1)//Answer B
   else if(qnaRevealSequence==4) $('#ansC .ansLetter .ansText').css('opacity',1)//Answer C
