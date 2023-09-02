@@ -30,6 +30,18 @@ $(document).ready(function(){
     else if(e.keyCode==52){//4: lock in D
       lockin('D')
     }
-
+    else if(e.keyCode==76){//l: lifeline pulse (only when money tree is on)
+      var lifelinePulseSequence=0
+      if(window.gameVars.moneyTreeIsOn&&lifelinePulseSequence==0){
+        playSound("ll1.mp3")
+      }
+      else if(window.gameVars.moneyTreeIsOn&&lifelinePulseSequence==1){
+        playSound("ll2.mp3")
+      }
+      else if(window.gameVars.moneyTreeIsOn&&lifelinePulseSequence==2){
+        playSound("ll3.mp3")
+      }
+      lifelinePulseSequence++
+    }
   })
 })
