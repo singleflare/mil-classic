@@ -1,3 +1,4 @@
+var qnaSequence,lifelinePulseSequence=0
 $(document).ready(function(){
   $(document).on('keydown',function(e){
     if(e.keyCode==37){//left arrow: money tree
@@ -5,7 +6,6 @@ $(document).ready(function(){
 
     }
     else if(e.keyCode==39){//right arrow: reveal questions and answers
-      var qnaSequence=0
       if(qnaSequence==0){
         playLetsPlay()
       }
@@ -15,7 +15,8 @@ $(document).ready(function(){
       else if(qnaSequence<=7){
         revealQnAGraphics1by1()
       }
-      
+      else{qnaSequence=-1}
+      console.log(qnaSequence)
       qnaSequence++
     }
     else if(e.keyCode==49){//1: lock in A
@@ -31,7 +32,6 @@ $(document).ready(function(){
       lockin('D')
     }
     else if(e.keyCode==76){//l: lifeline pulse (only when money tree is on)
-      var lifelinePulseSequence=0
       if(window.gameVars.moneyTreeIsOn&&lifelinePulseSequence==0){
         playSound("ll1.mp3")
       }
@@ -40,8 +40,13 @@ $(document).ready(function(){
       }
       else if(window.gameVars.moneyTreeIsOn&&lifelinePulseSequence==2){
         playSound("ll3.mp3")
+        lifelinePulseSequence=-1
       }
       lifelinePulseSequence++
+    }
+    else if(e.keyCode==70){//f: 50:50
+      if(gameVars.fiftyUsed){return}
+      else{fifty()}
     }
   })
 })
