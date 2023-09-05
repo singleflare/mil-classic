@@ -9,7 +9,7 @@ function playBed(){
   playSound(gameVars.bedSounds[0])
 }
 function playFinalSound(){
-  playSound(gameVars.finalSounds[0])
+  playSound(gameVars.finalSounds[6])
 }
 function playCorrectSound(){
   playSound(gameVars.correctSounds[0])

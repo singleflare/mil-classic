@@ -13,7 +13,7 @@
   gameVars.moneyTreeIsOn=true
   gameVars.fiftyUsed=false
   gameVars.jumpUsed=false
-  gameVars.doubleDipUsed=false
+  gameVars.doubleUsed=false
 
   gameVars.questionNumber=null
   gameVars.revealQnaKeyboardSequence=0

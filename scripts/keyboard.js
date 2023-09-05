@@ -11,6 +11,7 @@ $(document).ready(function(){
       }
       else if(qnaSequence==1){
         playBed()
+        revealQnAGraphics1by1()
       }
       else if(qnaSequence<=7){
         revealQnAGraphics1by1()
