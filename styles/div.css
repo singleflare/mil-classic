@@ -1,26 +1,23 @@
 .questionPanel{
-	width:1920px;
-	height:192px;
-	left:0px;
-	right:0px;
+	width:100vw;
+	height:180px;
+	opacity:1;
+	position:relative;
+}
+.questionPanel .qText{
+	position: absolute;
+  top: 0;
+  left: 0;
+}
+.qText{
+	z-index: 1;
+
+
+}
+.ansPanelTop .ansPanelBot{
+  width:100vw;
+	height:90px;
 	opacity:0;
-}
-.ansPanel{
-  width:1920px;
-	height:96px;
-	left:0px;
-	right:0px;
-	opacity:0;
-}
-.leftAnsPanel{
-	width: 700px;
-	height: 96px;
-	left: 227px;
-}
-.rightAnsPanel{
-	width: 700px;
-	height: 96px;
-	right: 227px;
 }
 .ansText .ansLetter {
 	font-size: 43pt;
@@ -31,7 +28,7 @@
 	opacity:0;
 }
 .finalImg .correctImg{
-	opacity:0;
+	opacity:0 ;
 }
 .moneyTree{
 	opacity:0;
