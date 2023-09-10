@@ -12,30 +12,42 @@
   </head>
   <body>
     <div class="questionPanel">
-      <img src="images/classic question.png" style="width:1280px;height:auto">
+      <img src="images/classic question.png" style="width:100vw;height:auto">
       <p class="qText">Câu hỏi</p>
     </div>
 
-    <img src="images/classic answer.png" class="ansPanelTop" style="width:1280px;height:auto">
-    <img src="images/classic answer.png" class="ansPanelBot" style="width:1280px;height:auto">
+    <div id="topPanel">
+      <img src="images/classic answer.png" class="ansPanelTop" style="width:100vw;height:auto">
+      <div id="ansA">
+        <img src="images/classic final fill.png" class="finalImgA">
+        <img src="images/classic correct fill.png" class="correctImgA">
+        <p class="ansLetter">A:</p>
+        <p class="ansText">Answer A</p>
+      </div>
+      <div id="ansB">
+        <img src="images/classic final fill.png" class="finalImgB">
+        <img src="images/classic correct fill.png" class="correctImgB">
+        <p class="ansLetter">B:</p>
+        <p class="ansText">Answer B</p>
+      </div>
+    </div>
 
-    <img src="images/classic final fill.png" class="finalImgA">
-    <img src="images/classic correct fill.png" class="correctImgA">
-    <p class="ansLetter">A:</p>
-    <p class="ansText">Answer A</p>
-    <img src="images/classic final fill.png" class="finalImgB">
-    <img src="images/classic correct fill.png" class="correctImgB">
-    <p class="ansLetter">B:</p>
-    <p class="ansText">Answer B</p>
-    <img src="images/classic final fill.png" class="finalImgC">
-    <img src="images/classic correct fill.png" class="correctImgC">
-    <p class="ansLetter">C:</p>
-    <p class="ansText">Answer C</p>
-    <img src="images/classic final fill.png" class="finalImgD">
-    <img src="images/classic correct fill.png" class="correctImgD">
-    <p class="ansLetter">D:</p>
-    <p class="ansText">Answer D</p>
-
+    <div id="botPanel">
+      <img src="images/classic answer.png" class="ansPanelBot" style="width:100vw;height:auto">
+      <div id="ansC">
+        <img src="images/classic final fill.png" class="finalImgC">
+        <img src="images/classic correct fill.png" class="correctImgC">
+        <p class="ansLetter">C:</p>
+        <p class="ansText">Answer C</p>
+      </div>
+      <div id="ansD">
+        <img src="images/classic final fill.png" class="finalImgD">
+        <img src="images/classic correct fill.png" class="correctImgD">
+        <p class="ansLetter">D:</p>
+        <p class="ansText">Answer D</p>
+      </div>
+    </div>
+    
     <div class="moneyTree">
       <div class="ll5050">
         <img src="images/5050.png" class="llImg">
@@ -53,13 +65,12 @@
         <img src="images/x.png" class="llUsedImg">
       </div>
       <table class="moneyTable">
-
       </table>
     </div>
 
     <!--Current money panel-->
     <div class="currentMoneyPanel">
-      <img src="images/classic money panel.png" style="width:1280px;height:auto">
+      <img src="images/classic money panel.png" style="width:100vw;height:auto">
       <p class="winnings">This question money</p>
     </div>
 
