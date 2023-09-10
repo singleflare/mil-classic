@@ -1,21 +1,18 @@
 .questionPanel{
-	width:100vw;
-	height:180px;
+	background-color: red;
 	opacity:1;
 	position:relative;
-}
-.questionPanel .qText{
-	position: absolute;
-  top: 0;
-  left: 0;
+	text-align: center;
 }
 .qText{
-	z-index: 1;
-
-
+	position: absolute;
+	top:50%;
+	left:50%;
+	color:white;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .ansPanelTop .ansPanelBot{
-  width:100vw;
+  width:80vw;
 	height:90px;
 	opacity:0;
 }
@@ -28,7 +25,7 @@
 	opacity:0;
 }
 .finalImg .correctImg{
-	opacity:0 ;
+	opacity:0;
 }
 .moneyTree{
 	opacity:0;
