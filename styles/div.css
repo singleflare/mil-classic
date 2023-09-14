@@ -1,23 +1,20 @@
-.questionPanel{
+.questionPanel#topPanel#botPanel{
 	opacity:1;
 	position:relative;
-	text-align: center;
+	width:100%
+}
+img{
+	width:100%
+}
+#ansA,#ansB,#ansC,#ansD{
+	width:50%;
 }
 .qText{
-	position: absolute;
-	top:50%;
-	left:50%;
+	position: absolute; 
+	top: 50%; left: 50%; transform: translate(-50%, -50%);
 	color: white;
 }
-.topPanel .botPanel{
-  width:80vw;
-	height:90px;
-	opacity:0;
-}
 .qText .ansText{
-	position:absolute;
-	top:50%;
-	left:50%;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	color:white;
 }
@@ -30,8 +27,7 @@
 	opacity:0;
 }
 .finalImg .correctImg{
-	top:0px;
-	z-index:1;
+	width:100%;
 	opacity:0;
 }
 .moneyTree{
