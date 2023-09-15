@@ -1,4 +1,4 @@
-.questionPanel#topPanel#botPanel{
+.questionPanel,#topPanel,#botPanel{
 	opacity:1;
 	position:relative;
 	width:100%
@@ -8,28 +8,29 @@ img{
 }
 #ansA,#ansB,#ansC,#ansD{
 	width:50%;
+	position:absolute;
+	top:-1px
+}
+#ansD,#ansB,#ansC{
+	opacity:1;
 }
 .qText{
 	position: absolute; 
 	top: 50%; left: 50%; transform: translate(-50%, -50%);
 	color: white;
 }
-.qText .ansText{
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	color:white;
-}
 .ansText .ansLetter {
+	position:absolute;
 	font-size: 43pt;
 	font-family:'Times New Roman';
 	color:#ffffff;
-	left:188px;
+	left:40%;
 	top:50%;
-	opacity:0;
-}
-.finalImg .correctImg{
-	width:100%;
 	opacity:0;
 }
 .moneyTree{
 	opacity:0;
+}
+.finalImg,.correctImg{
+	position:absolute;
 }
