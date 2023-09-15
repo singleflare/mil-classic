@@ -1,32 +1,38 @@
+img{
+	width:100%
+}
 .questionPanel,#topPanel,#botPanel{
 	opacity:1;
 	position:relative;
 	width:100%
 }
-img{
-	width:100%
-}
 #ansA,#ansB,#ansC,#ansD{
 	width:50%;
 	position:absolute;
-	top:-1px
-}
-#ansD,#ansB,#ansC{
+	top:-1px;
 	opacity:1;
 }
 .qText{
-	position: absolute; 
-	top: 50%; left: 50%; transform: translate(-50%, -50%);
-	color: white;
-}
-.ansText .ansLetter {
-	position:absolute;
-	font-size: 43pt;
-	font-family:'Times New Roman';
+	position: absolute;
+	font-size: 33px;
+	font-family:'Calibri';
 	color:#ffffff;
-	left:40%;
-	top:50%;
-	opacity:0;
+	opacity:1;
+	top: 0%;
+	text-align: center;
+}
+.ansLetter{
+	color: orange;
+}
+.ansText{
+	color:white;
+}
+.ansText,.ansLetter {
+	position:absolute;
+	font-size: 35px;
+	font-family:'Calibri';
+	opacity:1;
+	top:-20px;
 }
 .moneyTree{
 	opacity:0;
