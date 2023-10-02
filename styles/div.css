@@ -1,23 +1,49 @@
 img{
-	width:100%;
+	position: absolute;
 }
-.questionPanel,#topPanel,#botPanel{
-	position:relative;
+body{
+	width:1920px;
+	height:1080px;
+	margin: 0px;
+	overflow: hidden;
+	position: relative;
 }
-#ansA,#ansB,#ansC,#ansD{
-	width:50%;
+div{
 	position:absolute;
-	top:-1px;
-	opacity:1;
+}
+.questionPanel{
+	width: 1920px;
+	height:138px;
+	bottom:200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .qText{
-	position: absolute;
-	font-size: 33px;
+	margin: 0;
+	font-size: 35px;
 	font-family:'Calibri';
 	color:#ffffff;
-	top:25%;
-	left:50%;
-	transform:translate(-50%, -50%);
+	text-shadow: 0 0 black;
+}
+.ansPanelTop{
+	width:1920px;
+	height: 88px;
+	bottom: 100px;
+}
+.ansPanelBot{
+	width:1920px;
+	height: 88px;
+	bottom:0;
+}
+.leftAnsPanel{
+	width:960px;
+	height:88px;
+}
+.rightAnsPanel{
+	width:960px;
+	height:88px;
+	right:0;
 }
 .ansLetter{
 	color: orange;
