@@ -7,33 +7,35 @@ function setQ(){
   $('#ansC .ansText').html(targetQ.AnsC)
   $('#ansD .ansText').html(targetQ.AnsD)
 }
-
+let qnaRevealSequence=0
 function revealQnAGraphics1by1(){
-  var qnaRevealSequence=0
   if(qnaRevealSequence==0){//QnA panel
-    $('.ansPanel').css('opacity',1)
+    $('.ansPanelTop,.ansPanelBot').css('opacity',1)
     $('.questionPanel').css('opacity',1)
+    $('.qText').css('opacity',1)
   }
-  else if(qnaRevealSequence==1) $('.qText').css('opacity',1)//Question
-  else if(qnaRevealSequence==2) $('#ansA .ansLetter .ansText').css('opacity',1)//Answer A
-  else if(qnaRevealSequence==3) $('#ansB .ansLetter .ansText').css('opacity',1)//Answer B
-  else if(qnaRevealSequence==4) $('#ansC .ansLetter .ansText').css('opacity',1)//Answer C
-  else if(qnaRevealSequence==5) $('#ansD .ansLetter .ansText').css('opacity',1)//Answer D
+  else if(qnaRevealSequence==1) $('.ansPanelTop .leftAnsPanel .ansLetter,.ansPanelTop .leftAnsPanel .ansText').css('opacity',1)//Answer A
+  else if(qnaRevealSequence==2) $('.ansPanelTop .rightAnsPanel .ansLetter,.ansPanelTop .rightAnsPanel .ansText').css('opacity',1)//Answer B
+  else if(qnaRevealSequence==3) $('.ansPanelBot .leftAnsPanel .ansLetter,.ansPanelBot .leftAnsPanel .ansText').css('opacity',1)//Answer C
+  else if(qnaRevealSequence==4) $('.ansPanelBot .rightAnsPanel .ansLetter,.ansPanelBot .rightAnsPanel .ansText').css('opacity',1)//Answer D
   else {
     qnaRevealSequence=-1
     hideQnaGraphics()
   }
+  console.log('qnareveal:'+qnaRevealSequence)
   qnaRevealSequence++
 }
 
 function hideQnaGraphics(){
-  $('.ansPanel, .questionPanel, .qText, .ansText, .ansLetter').css('opacity',0)
+  $('.ansPanelTop,.ansPanelBot, .questionPanel, .qText, .ansText, .ansLetter').css('opacity',0)
 }
 
 function lockin(ans){
   window.gameVars.currentFinal=ans
-  $('#ans'+answer+'.finalImg').css('opacity',1);
-  $('#ans'+ answer+ '.ansLetter .ansText').css('color', '#000000');
+  if(ans=='A'){
+    $('.ansPanelTop .leftAnsPanel .finalImg').css('opacity',1)
+    $('.ansPanelTop .leftAnsPanel .ansLetter,.ansPanelTop .leftAnsPanel .ansText').css('color','black')
+  }
   playFinalSound()
 }
 

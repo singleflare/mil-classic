@@ -6,7 +6,7 @@ body{
 	height:1080px;
 	margin: 0px;
 	overflow: hidden;
-	position: relative;
+	background-color:darkblue;
 }
 div{
 	position:absolute;
@@ -14,27 +14,30 @@ div{
 .questionPanel{
 	width: 1920px;
 	height:138px;
-	bottom:200px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	bottom:190px;
+	display: grid;
+	place-items: center;
+	opacity: 0;
 }
 .qText{
 	margin: 0;
-	font-size: 35px;
+	font-size: 45px;
 	font-family:'Calibri';
 	color:#ffffff;
 	text-shadow: 0 0 black;
+	z-index: 1;
 }
 .ansPanelTop{
 	width:1920px;
 	height: 88px;
-	bottom: 100px;
+	bottom: 95px;
+	opacity: 0;
 }
 .ansPanelBot{
 	width:1920px;
 	height: 88px;
-	bottom:0;
+	bottom:0px;
+	opacity: 0;
 }
 .leftAnsPanel{
 	width:960px;
@@ -55,8 +58,8 @@ div{
 	position:absolute;
 	font-size: 38px;
 	font-family:'Calibri';
-	opacity:1;
-	top:-20px;
+	opacity:0;
+	top:-20%;
 }
 .moneyTree{
 	opacity:0;
