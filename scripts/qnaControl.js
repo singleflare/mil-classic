@@ -19,7 +19,7 @@ function revealQnAGraphics1by1(){
   else if(qnaRevealSequence==3) $('.ansPanelBot .leftAnsPanel .ansLetter,.ansPanelBot .leftAnsPanel .ansText').css('opacity',1)//Answer C
   else if(qnaRevealSequence==4) $('.ansPanelBot .rightAnsPanel .ansLetter,.ansPanelBot .rightAnsPanel .ansText').css('opacity',1)//Answer D
   else {
-    qnaRevealSequence=-1
+    qnaRevealSequence=0
     hideQnaGraphics()
   }
   console.log('qnareveal:'+qnaRevealSequence)
@@ -28,6 +28,9 @@ function revealQnAGraphics1by1(){
 
 function hideQnaGraphics(){
   $('.ansPanelTop,.ansPanelBot, .questionPanel, .qText, .ansText, .ansLetter').css('opacity',0)
+}
+function unhideQnaGraphics(){
+  $('.ansPanelTop,.ansPanelBot, .questionPanel, .qText, .ansText, .ansLetter').css('opacity',1)
 }
 
 function lockin(ans){

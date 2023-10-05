@@ -32,6 +32,13 @@ $(document).ready(function(){
     else if(e.keyCode==52){//4: lock in D
       lockin('D')
     }
+    else if(e.keyCode==53){//5: reveal correct answer
+      revealCorrect()
+    }
+    else if(e.keyCode==72){//h: hide/unhide straps
+      if($('.questionPanel').css('opacity')==1){hideQnaGraphics()}
+      else{unhideQnaGraphics()}
+    }
     else if(e.keyCode==76){//l: lifeline pulse (only when money tree is on)
       if(window.gameVars.moneyTreeIsOn&&lifelinePulseSequence==0){
         playSound("ll1.mp3")
