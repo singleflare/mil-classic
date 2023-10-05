@@ -1,4 +1,4 @@
-img{
+img,div{
 	position: absolute;
 }
 body{
@@ -6,10 +6,7 @@ body{
 	height:1080px;
 	margin: 0px;
 	overflow: hidden;
-	background-color:darkblue;
-}
-div{
-	position:absolute;
+	background-color:black;
 }
 .questionPanel{
 	width: 1920px;
@@ -68,4 +65,10 @@ div{
 	position:absolute;
 	width:100%;
 	opacity:0;
+}
+.currentMoneyPanel{
+	width:1920px;
+	height:328px;
+	bottom:0;
+	opacity: 0;
 }

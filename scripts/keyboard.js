@@ -11,12 +11,15 @@ $(document).ready(function(){
       }
       else if(qnaSequence==1){
         playBed()
-        revealQnAGraphics1by1()
+        $('.ansPanelTop,.ansPanelBot').css('opacity',1)
+        $('.questionPanel').css('opacity',1)
+        $('.qText').css('opacity',1)
       }
-      else if(qnaSequence<=7){
-        revealQnAGraphics1by1()
-      }
-      else{qnaSequence=-1}
+      else if(qnaSequence==2) $('#ansA .ansLetter,#ansA .ansText').css('opacity',1)
+      else if(qnaSequence==3) $('#ansB .ansLetter,#ansB .ansText').css('opacity',1)
+      else if(qnaSequence==4) $('#ansC .ansLetter,#ansC .ansText').css('opacity',1)
+      else if(qnaSequence==5) $('#ansD .ansLetter,#ansD .ansText').css('opacity',1)
+      else{qnaSequence=0}
       console.log(qnaSequence)
       qnaSequence++
     }
@@ -51,6 +54,10 @@ $(document).ready(function(){
         lifelinePulseSequence=-1
       }
       lifelinePulseSequence++
+    }
+    else if(e.keyCode==77){//m: show current money
+      hideQnaGraphics()
+      showCurrentMoney()
     }
     else if(e.keyCode==70){//f: 50:50
       if(gameVars.fiftyUsed){return}
