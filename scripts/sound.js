@@ -17,3 +17,6 @@ function playCorrectSound(){
 function playWrongSound(){
   playSound(gameVars.wrongSounds[0])
 }
+function stopAllSound(){
+  $('audio').each(function() {this.pause()})
+}
